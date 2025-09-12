@@ -4,14 +4,14 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-SP1-MAG-QUAD-02:TEST1
         protocol: CA
-        pv: CLA-SP1-MAG-QUAD-02:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-SP1-MAG-QUAD-02:TEST2
         protocol: PVA
-        pv: CLA-SP1-MAG-QUAD-02:TEST2
         type: binary
 degauss:
     steps: 11
@@ -27,7 +27,8 @@ hardware_type: Quadrupole
 machine_area: SP1
 magnetic:
     field_integral_coefficients:
-        coefficients: [0]
+        coefficients:
+        - 0
     length: 0.1
     linear_saturation_coefficients:
         I0: 0
@@ -54,16 +55,40 @@ manufacturer:
     serial_number: ''
 name: CLA-SP1-MAG-QUAD-02
 physical:
-    datum: [-2.0325938, 0.0, 8.0704261]
+    datum:
+    - -2.0325938
+    - 0.0
+    - 8.0704261
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.785398]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.785398
     length: 0.1
-    middle: [-2.0325938, 0.0, 8.0704261]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - -2.0325938
+    - 0.0
+    - 8.0704261
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''

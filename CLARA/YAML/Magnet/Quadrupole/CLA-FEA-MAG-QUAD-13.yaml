@@ -4,19 +4,30 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-FEA-MAG-QUAD-13:TEST1
         protocol: CA
-        pv: CLA-FEA-MAG-QUAD-13:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-FEA-MAG-QUAD-13:TEST2
         protocol: PVA
-        pv: CLA-FEA-MAG-QUAD-13:TEST2
         type: binary
 degauss:
     steps: 11
     tolerance: 0.5
-    values: [93.81, -93.81, 56.4, -56.4, 37.6, -37.6, 18.8, -18.8, 9.4, -9.4, 0.0]
+    values:
+    - 93.81
+    - -93.81
+    - 56.4
+    - -56.4
+    - 37.6
+    - -37.6
+    - 18.8
+    - -18.8
+    - 9.4
+    - -9.4
+    - 0.0
 electrical:
     maxI: 94
     minI: -94.0
@@ -27,7 +38,8 @@ hardware_type: Quadrupole
 machine_area: FEA
 magnetic:
     field_integral_coefficients:
-        coefficients: [0]
+        coefficients:
+        - 0
     length: 0.15
     linear_saturation_coefficients:
         I0: 619.3656073713794
@@ -54,16 +66,40 @@ manufacturer:
     serial_number: '19383'
 name: CLA-FEA-MAG-QUAD-13
 physical:
-    datum: [3.680751, 0.0, 60.110479]
+    datum:
+    - 3.680751
+    - 0.0
+    - 60.110479
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     length: 0.15
-    middle: [3.680751, 0.0, 60.110479]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - 3.680751
+    - 0.0
+    - 60.110479
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''

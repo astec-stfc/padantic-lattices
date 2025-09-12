@@ -4,14 +4,14 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-FMS-MAG-PMD-02:TEST1
         protocol: CA
-        pv: CLA-FMS-MAG-PMD-02:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-FMS-MAG-PMD-02:TEST2
         protocol: PVA
-        pv: CLA-FMS-MAG-PMD-02:TEST2
         type: binary
 degauss:
     steps: 11
@@ -27,7 +27,8 @@ hardware_type: Dipole
 machine_area: FMS
 magnetic:
     field_integral_coefficients:
-        coefficients: [0]
+        coefficients:
+        - 0
     length: 0.15
     linear_saturation_coefficients:
         I0: 0
@@ -37,12 +38,7 @@ magnetic:
         d: 0
         f: 0
         m: 0
-    multipoles:
-        K0L:
-            normal: 0.02
-            order: 0
-            radius: 0.0
-            skew: 0.0
+    multipoles: {}
     order: 0
     random_multipoles: {}
     settle_time: 45.0
@@ -54,16 +50,40 @@ manufacturer:
     serial_number: ''
 name: CLA-FMS-MAG-PMD-02
 physical:
-    datum: [-0.00340595, 0.0, 55.33116751]
+    datum:
+    - -0.00340595
+    - 0.0
+    - 55.33116751
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.009996]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.009996
     length: 0.15
-    middle: [-0.00115651, 0.0, 55.25619875]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - -0.00115651
+    - 0.0
+    - 55.25619875
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''

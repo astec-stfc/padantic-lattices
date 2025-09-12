@@ -4,19 +4,30 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-FMS-MAG-DIP-06:TEST1
         protocol: CA
-        pv: CLA-FMS-MAG-DIP-06:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-FMS-MAG-DIP-06:TEST2
         protocol: PVA
-        pv: CLA-FMS-MAG-DIP-06:TEST2
         type: binary
 degauss:
     steps: 11
     tolerance: 0.5
-    values: [9.98, -9.98, 6.0, -6.0, 4.0, -4.0, 2.0, -2.0, 1.0, -1.0, 0.0]
+    values:
+    - 9.98
+    - -9.98
+    - 6.0
+    - -6.0
+    - 4.0
+    - -4.0
+    - 2.0
+    - -2.0
+    - 1.0
+    - -1.0
+    - 0.0
 electrical:
     maxI: 0
     minI: -0.0
@@ -27,7 +38,8 @@ hardware_type: Dipole
 machine_area: FMS
 magnetic:
     field_integral_coefficients:
-        coefficients: [0]
+        coefficients:
+        - 0
     length: 0.200513
     linear_saturation_coefficients:
         I0: 0.0
@@ -37,12 +49,7 @@ magnetic:
         d: 0.0
         f: 0.0
         m: 0.0
-    multipoles:
-        K0L:
-            normal: 0.248
-            order: 0
-            radius: 0.0
-            skew: 0.0
+    multipoles: {}
     order: 0
     random_multipoles: {}
     settle_time: 45.0
@@ -54,16 +61,40 @@ manufacturer:
     serial_number: 0
 name: CLA-FMS-MAG-DIP-06
 physical:
-    datum: [-0.07025503, 0.0, 52.33068072]
+    datum:
+    - -0.07025503
+    - 0.0
+    - 52.33068072
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.123998]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.123998
     length: 0.200513
-    middle: [-0.03362612, 0.0, 52.2367998]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - -0.03362612
+    - 0.0
+    - 52.2367998
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''

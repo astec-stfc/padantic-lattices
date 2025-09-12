@@ -4,19 +4,30 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-S07-MAG-QUAD-09:TEST1
         protocol: CA
-        pv: CLA-S07-MAG-QUAD-09:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-S07-MAG-QUAD-09:TEST2
         protocol: PVA
-        pv: CLA-S07-MAG-QUAD-09:TEST2
         type: binary
 degauss:
     steps: 11
     tolerance: 0.5
-    values: [93.81, -93.81, 56.4, -56.4, 37.6, -37.6, 18.8, -18.8, 9.4, -9.4, 0.0]
+    values:
+    - 93.81
+    - -93.81
+    - 56.4
+    - -56.4
+    - 37.6
+    - -37.6
+    - 18.8
+    - -18.8
+    - 9.4
+    - -9.4
+    - 0.0
 electrical:
     maxI: 94
     minI: -94.0
@@ -27,7 +38,8 @@ hardware_type: Quadrupole
 machine_area: S07
 magnetic:
     field_integral_coefficients:
-        coefficients: [0]
+        coefficients:
+        - 0
     length: 0.15
     linear_saturation_coefficients:
         I0: 797.7876633756864
@@ -54,16 +66,40 @@ manufacturer:
     serial_number: '16619'
 name: CLA-S07-MAG-QUAD-09
 physical:
-    datum: [0.0, 0.0, 47.4178]
+    datum:
+    - 0.0
+    - 0.0
+    - 47.4178
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     length: 0.15
-    middle: [0.0, 0.0, 47.3368]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - 0.0
+    - 0.0
+    - 47.3368
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''

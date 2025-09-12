@@ -5,16 +5,40 @@ hardware_type: Marker
 machine_area: SP1
 name: CLA-SP1-DIA-FCUP-01
 physical:
-    datum: [-2.8493037, 0.0, 8.8871362]
+    datum:
+    - -2.8493037
+    - 0.0
+    - 8.8871362
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.785398]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.785398
     length: 0.0
-    middle: [-2.8493037, 0.0, 8.8871362]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - -2.8493037
+    - 0.0
+    - 8.8871362
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''

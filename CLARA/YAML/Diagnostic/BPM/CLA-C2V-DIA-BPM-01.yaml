@@ -4,14 +4,14 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-C2V-DIA-BPM-01:TEST1
         protocol: CA
-        pv: CLA-C2V-DIA-BPM-01:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-C2V-DIA-BPM-01:TEST2
         protocol: PVA
-        pv: CLA-C2V-DIA-BPM-01:TEST2
         type: binary
 diagnostic:
     attenuation1_calibration: 12
@@ -30,16 +30,40 @@ hardware_type: BPM
 machine_area: C2V
 name: CLA-C2V-DIA-BPM-01
 physical:
-    datum: [-0.368412, 0.0, 6.406245]
+    datum:
+    - -0.368412
+    - 0.0
+    - 6.406245
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.785398]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.785398
     length: 0.0
-    middle: [-0.368412, 0.0, 6.406245]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - -0.368412
+    - 0.0
+    - 6.406245
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''

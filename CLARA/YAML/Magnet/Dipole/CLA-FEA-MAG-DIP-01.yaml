@@ -4,20 +4,30 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-FEA-MAG-DIP-01:TEST1
         protocol: CA
-        pv: CLA-FEA-MAG-DIP-01:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-FEA-MAG-DIP-01:TEST2
         protocol: PVA
-        pv: CLA-FEA-MAG-DIP-01:TEST2
         type: binary
 degauss:
     steps: 11
     tolerance: 0.5
-    values: [337.32, -337.32, 202.8, -202.8, 135.2, -135.2, 67.6, -67.6, 33.8, -33.8,
-        0.0]
+    values:
+    - 337.32
+    - -337.32
+    - 202.8
+    - -202.8
+    - 135.2
+    - -135.2
+    - 67.6
+    - -67.6
+    - 33.8
+    - -33.8
+    - 0.0
 electrical:
     maxI: 338
     minI: -338.0
@@ -28,7 +38,8 @@ hardware_type: Dipole
 machine_area: FEA
 magnetic:
     field_integral_coefficients:
-        coefficients: [0]
+        coefficients:
+        - 0
     length: 0.2
     linear_saturation_coefficients:
         I0: 1067.1267532482045
@@ -38,12 +49,7 @@ magnetic:
         d: 391.3755165163718
         f: 0.0
         m: 0.5871407922379503
-    multipoles:
-        K0L:
-            normal: -0.2443460953
-            order: 0
-            radius: 0.0
-            skew: 0.0
+    multipoles: {}
     order: 0
     random_multipoles: {}
     settle_time: 45.0
@@ -55,16 +61,40 @@ manufacturer:
     serial_number: '4'
 name: CLA-FEA-MAG-DIP-01
 physical:
-    datum: [0.0, 0.0, 48.39830053]
+    datum:
+    - 0.0
+    - 0.0
+    - 48.39830053
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     length: 0.2
-    middle: [0.0, 0.0, 48.39830053]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - 0.0
+    - 0.0
+    - 48.39830053
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''

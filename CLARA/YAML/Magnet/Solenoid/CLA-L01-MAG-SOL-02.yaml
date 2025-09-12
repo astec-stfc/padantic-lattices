@@ -4,20 +4,30 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-L01-MAG-SOL-02:TEST1
         protocol: CA
-        pv: CLA-L01-MAG-SOL-02:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-L01-MAG-SOL-02:TEST2
         protocol: PVA
-        pv: CLA-L01-MAG-SOL-02:TEST2
         type: binary
 degauss:
     steps: 11
     tolerance: 0.5
-    values: [199.6, -199.6, 120.0, -120.0, 80.0, -80.0, 40.0, -40.0, 20.0, -20.0,
-        0.0]
+    values:
+    - 199.6
+    - -199.6
+    - 120.0
+    - -120.0
+    - 80.0
+    - -80.0
+    - 40.0
+    - -40.0
+    - 20.0
+    - -20.0
+    - 0.0
 electrical:
     maxI: 200
     minI: -200.0
@@ -28,7 +38,8 @@ hardware_type: Solenoid
 machine_area: L01
 magnetic:
     field_integral_coefficients:
-        coefficients: [0]
+        coefficients:
+        - 0
     fields:
         S0L: -0.025
     length: 0.5
@@ -50,16 +61,40 @@ manufacturer:
     serial_number: '9'
 name: CLA-L01-MAG-SOL-02
 physical:
-    datum: [0.0, 0.0, 3.2]
+    datum:
+    - 0.0
+    - 0.0
+    - 3.2
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     length: 0.5
-    middle: [0.0, 0.0, 2.95]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - 0.0
+    - 0.0
+    - 2.95
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: true
 virtual_name: ''

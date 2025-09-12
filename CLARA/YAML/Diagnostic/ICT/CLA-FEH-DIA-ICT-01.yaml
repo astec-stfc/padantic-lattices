@@ -4,14 +4,14 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-FEH-DIA-ICT-01:TEST1
         protocol: CA
-        pv: CLA-FEH-DIA-ICT-01:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-FEH-DIA-ICT-01:TEST2
         protocol: PVA
-        pv: CLA-FEH-DIA-ICT-01:TEST2
         type: binary
 diagnostic:
     type: integrated_current_transformer
@@ -21,16 +21,40 @@ hardware_type: ICT
 machine_area: FEH
 name: CLA-FEH-DIA-ICT-01
 physical:
-    datum: [3.6807505, 0.0, 71.7352]
+    datum:
+    - 3.6807505
+    - 0.0
+    - 71.7352
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     length: 0.04
-    middle: [3.6807505, 0.0, 71.7352]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - 3.6807505
+    - 0.0
+    - 71.7352
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''

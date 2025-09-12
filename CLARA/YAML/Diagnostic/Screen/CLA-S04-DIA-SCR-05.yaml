@@ -4,14 +4,14 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-S04-DIA-SCR-05:TEST1
         protocol: CA
-        pv: CLA-S04-DIA-SCR-05:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-S04-DIA-SCR-05:TEST2
         protocol: PVA
-        pv: CLA-S04-DIA-SCR-05:TEST2
         type: binary
 diagnostic:
     camera_name: CLA-S04-DIA-CAM-05
@@ -25,16 +25,40 @@ hardware_type: Screen
 machine_area: S04
 name: CLA-S04-DIA-SCR-05
 physical:
-    datum: [0.0, 0.0, 21.3152]
+    datum:
+    - 0.0
+    - 0.0
+    - 21.3152
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     length: 0.0
-    middle: [0.0, 0.0, 21.3152]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - 0.0
+    - 0.0
+    - 21.3152
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''

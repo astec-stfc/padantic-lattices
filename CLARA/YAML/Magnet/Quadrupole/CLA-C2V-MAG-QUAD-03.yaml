@@ -4,20 +4,30 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-C2V-MAG-QUAD-03:TEST1
         protocol: CA
-        pv: CLA-C2V-MAG-QUAD-03:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-C2V-MAG-QUAD-03:TEST2
         protocol: PVA
-        pv: CLA-C2V-MAG-QUAD-03:TEST2
         type: binary
 degauss:
     steps: 11
     tolerance: 0.5
-    values: [185.63, -185.63, 111.6, -111.6, 74.4, -74.4, 37.2, -37.2, 18.6, -18.6,
-        0.0]
+    values:
+    - 185.63
+    - -185.63
+    - 111.6
+    - -111.6
+    - 74.4
+    - -74.4
+    - 37.2
+    - -37.2
+    - 18.6
+    - -18.6
+    - 0.0
 electrical:
     maxI: 186
     minI: -186.0
@@ -28,8 +38,13 @@ hardware_type: Quadrupole
 machine_area: C2V
 magnetic:
     field_integral_coefficients:
-        coefficients: [-1.31651924239548e-11, 5.76805215137824e-09, -9.16843633799561e-07,
-            6.036266595182e-05, 0.0147634437187611, 0.013343693771224]
+        coefficients:
+        - -1.31651924239548e-11
+        - 5.76805215137824e-09
+        - -9.16843633799561e-07
+        - 6.036266595182e-05
+        - 0.0147634437187611
+        - 0.013343693771224
     length: 0.121551
     linear_saturation_coefficients:
         I0: 35.38118700932737
@@ -56,16 +71,40 @@ manufacturer:
     serial_number: '13253'
 name: CLA-C2V-MAG-QUAD-03
 physical:
-    datum: [-0.87303552, 0.0, 6.91086955]
+    datum:
+    - -0.87303552
+    - 0.0
+    - 6.91086955
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.785398]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.785398
     length: 0.121551
-    middle: [-0.83006076, 0.0, 6.86789478]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - -0.83006076
+    - 0.0
+    - 6.86789478
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''

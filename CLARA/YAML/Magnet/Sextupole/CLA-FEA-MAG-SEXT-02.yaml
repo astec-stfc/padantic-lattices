@@ -4,19 +4,30 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-FEA-MAG-SEXT-02:TEST1
         protocol: CA
-        pv: CLA-FEA-MAG-SEXT-02:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-FEA-MAG-SEXT-02:TEST2
         protocol: PVA
-        pv: CLA-FEA-MAG-SEXT-02:TEST2
         type: binary
 degauss:
     steps: 11
     tolerance: 0.5
-    values: [9.98, -9.98, 6.0, -6.0, 4.0, -4.0, 2.0, -2.0, 1.0, -1.0, 0.0]
+    values:
+    - 9.98
+    - -9.98
+    - 6.0
+    - -6.0
+    - 4.0
+    - -4.0
+    - 2.0
+    - -2.0
+    - 1.0
+    - -1.0
+    - 0.0
 electrical:
     maxI: 8
     minI: -8.0
@@ -27,7 +38,8 @@ hardware_type: Sextupole
 machine_area: FEA
 magnetic:
     field_integral_coefficients:
-        coefficients: [0]
+        coefficients:
+        - 0
     length: 0.1
     linear_saturation_coefficients:
         I0: 0.0
@@ -49,16 +61,40 @@ manufacturer:
     serial_number: 0
 name: CLA-FEA-MAG-SEXT-02
 physical:
-    datum: [3.45313409, 0.0, 58.38704779]
+    datum:
+    - 3.45313409
+    - 0.0
+    - 58.38704779
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, -0.2443460953]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - -0.2443460953
     length: 0.1
-    middle: [3.45313409, 0.0, 58.38704779]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - 3.45313409
+    - 0.0
+    - 58.38704779
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''

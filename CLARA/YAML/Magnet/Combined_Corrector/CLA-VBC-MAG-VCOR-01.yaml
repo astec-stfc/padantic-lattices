@@ -6,19 +6,30 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-VBC-MAG-VCOR-01:TEST1
         protocol: CA
-        pv: CLA-VBC-MAG-VCOR-01:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-VBC-MAG-VCOR-01:TEST2
         protocol: PVA
-        pv: CLA-VBC-MAG-VCOR-01:TEST2
         type: binary
 degauss:
     steps: 11
     tolerance: 0.5
-    values: [9.98, -9.98, 6.0, -6.0, 4.0, -4.0, 2.0, -2.0, 1.0, -1.0, 0.0]
+    values:
+    - 9.98
+    - -9.98
+    - 6.0
+    - -6.0
+    - 4.0
+    - -4.0
+    - 2.0
+    - -2.0
+    - 1.0
+    - -1.0
+    - 0.0
 electrical:
     maxI: 10
     minI: -10.0
@@ -29,7 +40,8 @@ hardware_type: Combined_Corrector
 machine_area: VBC
 magnetic:
     field_integral_coefficients:
-        coefficients: [0]
+        coefficients:
+        - 0
     length: 0.05
     linear_saturation_coefficients:
         I0: 0.0
@@ -51,16 +63,40 @@ manufacturer:
     serial_number: '17054'
 name: CLA-VBC-MAG-VCOR-01
 physical:
-    datum: [0.161944, 0.0, 28.3131]
+    datum:
+    - 0.161944
+    - 0.0
+    - 28.3131
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     length: 0.05
-    middle: [0.161944, 0.0, 28.2881]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - 0.161944
+    - 0.0
+    - 28.2881
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''

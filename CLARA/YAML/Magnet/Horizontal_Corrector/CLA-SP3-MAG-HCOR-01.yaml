@@ -4,14 +4,14 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-SP3-MAG-HCOR-01:TEST1
         protocol: CA
-        pv: CLA-SP3-MAG-HCOR-01:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-SP3-MAG-HCOR-01:TEST2
         protocol: PVA
-        pv: CLA-SP3-MAG-HCOR-01:TEST2
         type: binary
 degauss:
     steps: 11
@@ -27,7 +27,8 @@ hardware_type: Horizontal_Corrector
 machine_area: SP3
 magnetic:
     field_integral_coefficients:
-        coefficients: [0]
+        coefficients:
+        - 0
     length: 0.1
     linear_saturation_coefficients:
         I0: 0
@@ -49,16 +50,40 @@ manufacturer:
     serial_number: ''
 name: CLA-SP3-MAG-HCOR-01
 physical:
-    datum: [-0.270001, 0.0, 45.96017645009441]
+    datum:
+    - -0.270001
+    - 0.0
+    - 45.96017645009441
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.523599]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.523599
     length: 0.1
-    middle: [-0.245001, 0.0, 45.91687518]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - -0.245001
+    - 0.0
+    - 45.91687518
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''

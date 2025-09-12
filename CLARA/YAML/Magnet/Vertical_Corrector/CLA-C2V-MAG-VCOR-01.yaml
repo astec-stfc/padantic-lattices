@@ -4,19 +4,30 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-C2V-MAG-VCOR-01:TEST1
         protocol: CA
-        pv: CLA-C2V-MAG-VCOR-01:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-C2V-MAG-VCOR-01:TEST2
         protocol: PVA
-        pv: CLA-C2V-MAG-VCOR-01:TEST2
         type: binary
 degauss:
     steps: 11
     tolerance: 0.5
-    values: [9.98, -9.98, 6.0, -6.0, 4.0, -4.0, 2.0, -2.0, 1.0, -1.0, 0.0]
+    values:
+    - 9.98
+    - -9.98
+    - 6.0
+    - -6.0
+    - 4.0
+    - -4.0
+    - 2.0
+    - -2.0
+    - 1.0
+    - -1.0
+    - 0.0
 electrical:
     maxI: 10
     minI: -10.0
@@ -27,7 +38,8 @@ hardware_type: Vertical_Corrector
 machine_area: C2V
 magnetic:
     field_integral_coefficients:
-        coefficients: [0]
+        coefficients:
+        - 0
     length: 0.21
     linear_saturation_coefficients:
         I0: 0.0
@@ -49,16 +61,40 @@ manufacturer:
     serial_number: '13263'
 name: CLA-C2V-MAG-VCOR-01
 physical:
-    datum: [-0.3684124, 0.0, 6.40624245]
+    datum:
+    - -0.3684124
+    - 0.0
+    - 6.40624245
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.785398]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.785398
     length: 0.21
-    middle: [-0.2941662, 0.0, 6.33199622]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - -0.2941662
+    - 0.0
+    - 6.33199622
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''

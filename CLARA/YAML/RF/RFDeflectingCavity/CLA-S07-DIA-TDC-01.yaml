@@ -12,17 +12,41 @@ hardware_type: RFDeflectingCavity
 machine_area: S07
 name: CLA-S07-DIA-TDC-01
 physical:
-    datum: [0.0, 0.0, 40.8045]
+    datum:
+    - 0.0
+    - 0.0
+    - 40.8045
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     length: 0.45
-    middle: [0.0, 0.0, 40.5795]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - 0.0
+    - 0.0
+    - 40.5795
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 simulation:
     field_amplitude: 0
     field_definition: null

@@ -17,17 +17,41 @@ hardware_type: RFCavity
 machine_area: L4H
 name: CLA-L4H-LIN-CAV-01
 physical:
-    datum: [0.0, 0.0, 24.3147]
+    datum:
+    - 0.0
+    - 0.0
+    - 24.3147
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     length: 0.75
-    middle: [0.0, 0.0, 23.9397]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - 0.0
+    - 0.0
+    - 23.9397
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 simulation:
     field_amplitude: 24000000.0
     field_definition: $master_lattice_location$Data_Files/TWS_X-DL.hdf5

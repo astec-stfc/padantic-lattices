@@ -4,14 +4,14 @@ controls:
         auto_buffer: false
         buffer_size: 10
         description: example controls information 1
+        name: CLA-FEH-DIA-SCR-01:TEST1
         protocol: CA
-        pv: CLA-FEH-DIA-SCR-01:TEST1
         type: statistical
         units: Gpc
     EX2:
         description: example controls information 2
+        name: CLA-FEH-DIA-SCR-01:TEST2
         protocol: PVA
-        pv: CLA-FEH-DIA-SCR-01:TEST2
         type: binary
 diagnostic:
     camera_name: CLA-FEH-DIA-CAM-01
@@ -25,16 +25,40 @@ hardware_type: Screen
 machine_area: FEH
 name: CLA-FEH-DIA-SCR-01
 physical:
-    datum: [3.6807505, 0.0, 67.52933]
+    datum:
+    - 3.6807505
+    - 0.0
+    - 67.52933
     error:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
-    global_rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+    global_rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     length: 0.15
-    middle: [3.6807505, 0.0, 67.54603]
-    rotation: [0.0, 0.0, 0.0]
+    middle:
+    - 3.6807505
+    - 0.0
+    - 67.54603
+    rotation:
+    - 0.0
+    - 0.0
+    - 0.0
     survey:
-        position: [0.0, 0.0, 0.0]
-        rotation: [0.0, 0.0, 0.0]
+        position:
+        - 0.0
+        - 0.0
+        - 0.0
+        rotation:
+        - 0.0
+        - 0.0
+        - 0.0
 subelement: false
 virtual_name: ''
