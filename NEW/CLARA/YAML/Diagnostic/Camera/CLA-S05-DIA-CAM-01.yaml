@@ -1,0 +1,60 @@
+alias: null
+controls:
+  EX1: ''
+  EX2: ''
+diagnostic:
+  epics_x_pixels: 1080
+  epics_y_pixels: 1280
+  flipped_horizontally: true
+  flipped_vertically: false
+  mask:
+    maximum: [300, 300]
+    middle: [1280, 1080]
+    radius: [1240, 1040]
+    use_maximum_values: true
+  pixel_results_indices:
+    covariance: 4
+    x: 0
+    x_sigma: 2
+    y: 1
+    y_sigma: 3
+  pixel_results_names:
+    covariance: COV
+    x: X
+    x_sigma: X_SIGMA
+    y: Y
+    y_sigma: Y_SIGMA
+  rotation: 0
+  sensor:
+    beam_pixel_average: 97.2
+    bit_depth: 12
+    maximum: [2400, 2000]
+    mechanical_middle: [1000, 1000]
+    middle: [0, 0]
+    minimum: [150, 150]
+    operating_middle: [1000, 1000]
+    pixels_to_mm: [0.013, 0.013]
+    x_pixels: 2560
+    x_scale_factor: 2
+    y_pixels: 2160
+    y_scale_factor: 2
+  type: PCO
+hardware_class: Diagnostic
+hardware_model: PCO
+hardware_type: Camera
+machine_area: S05
+name: CLA-S05-DIA-CAM-01
+physical:
+  datum: [0.0, 0.0, 25.1794]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.0]
+  length: 0.0
+  middle: [0.0, 0.0, 25.1794]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+subelement: false
+virtual_name: ''

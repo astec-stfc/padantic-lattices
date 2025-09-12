@@ -1,0 +1,29 @@
+alias: null
+controls:
+  EX1: ''
+  EX2: ''
+diagnostic:
+  camera_name: CLA-FEH-DIA-CAM-04
+  devices:
+    devices: []
+  has_camera: true
+  type: screen
+hardware_class: Diagnostic
+hardware_model: YAG
+hardware_type: Screen
+machine_area: FEH
+name: CLA-FEH-DIA-SCR-04
+physical:
+  datum: [3.6807505, 0.0, 74.67431]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.0]
+  length: 0.15
+  middle: [3.6807505, 0.0, 74.69101]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+subelement: false
+virtual_name: ''

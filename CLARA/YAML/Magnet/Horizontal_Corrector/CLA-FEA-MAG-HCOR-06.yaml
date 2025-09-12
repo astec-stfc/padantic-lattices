@@ -1,0 +1,64 @@
+alias: null
+controls:
+    EX1:
+        auto_buffer: false
+        buffer_size: 10
+        description: example controls information 1
+        protocol: CA
+        pv: CLA-FEA-MAG-HCOR-06:TEST1
+        type: statistical
+        units: Gpc
+    EX2:
+        description: example controls information 2
+        protocol: PVA
+        pv: CLA-FEA-MAG-HCOR-06:TEST2
+        type: binary
+degauss:
+    steps: 11
+    tolerance: 0.5
+    values: [19.96, -19.96, 12.0, -12.0, 8.0, -8.0, 4.0, -4.0, 2.0, -2.0, 0.0]
+electrical:
+    maxI: 20
+    minI: -20.0
+    read_tolerance: 0.1
+hardware_class: Magnet
+hardware_model: Generic
+hardware_type: Horizontal_Corrector
+machine_area: FEA
+magnetic:
+    field_integral_coefficients:
+        coefficients: [0]
+    length: 0.1
+    linear_saturation_coefficients:
+        I0: 0.0
+        I_max: 0.0
+        L: 0.0
+        a: 0.0
+        d: 0.0
+        f: 0.0
+        m: 0.0
+    multipoles: {}
+    order: 0
+    random_multipoles: {}
+    settle_time: 45.0
+    skew: false
+    systematic_multipoles: {}
+manufacturer:
+    hardware_class: Horizontal_Corrector
+    manufacturer: Corrector Type 9
+    serial_number: CL7-02
+name: CLA-FEA-MAG-HCOR-06
+physical:
+    datum: [3.6807505, 0.0, 63.15]
+    error:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+    global_rotation: [0.0, 0.0, 0.0]
+    length: 0.1
+    middle: [3.6807505, 0.0, 63.15]
+    rotation: [0.0, 0.0, 0.0]
+    survey:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+subelement: false
+virtual_name: ''

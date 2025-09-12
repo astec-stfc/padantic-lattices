@@ -1,0 +1,40 @@
+alias: null
+controls:
+    EX1:
+        auto_buffer: false
+        buffer_size: 10
+        description: example controls information 1
+        protocol: CA
+        pv: CLA-S02-DIA-SCR-02:TEST1
+        type: statistical
+        units: Gpc
+    EX2:
+        description: example controls information 2
+        protocol: PVA
+        pv: CLA-S02-DIA-SCR-02:TEST2
+        type: binary
+diagnostic:
+    camera_name: CLA-S02-DIA-CAM-02
+    devices:
+        devices: []
+    has_camera: true
+    type: screen
+hardware_class: Diagnostic
+hardware_model: YAG
+hardware_type: Screen
+machine_area: S02
+name: CLA-S02-DIA-SCR-02
+physical:
+    datum: [0.0, 0.0, 5.01083]
+    error:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+    global_rotation: [0.0, 0.0, 0.0]
+    length: 0.0
+    middle: [0.0, 0.0, 5.01083]
+    rotation: [0.0, 0.0, 0.0]
+    survey:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+subelement: false
+virtual_name: ''

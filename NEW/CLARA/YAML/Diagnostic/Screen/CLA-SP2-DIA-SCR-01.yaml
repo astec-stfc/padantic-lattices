@@ -1,0 +1,29 @@
+alias: null
+controls:
+  EX1: ''
+  EX2: ''
+diagnostic:
+  camera_name: CLA-SP2-DIA-CAM-01
+  devices:
+    devices: []
+  has_camera: true
+  type: screen
+hardware_class: Diagnostic
+hardware_model: YAG
+hardware_type: Screen
+machine_area: SP2
+name: CLA-SP2-DIA-SCR-01
+physical:
+  datum: [-0.3409865, 0.0, 33.903097]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.523599]
+  length: 0.0
+  middle: [-0.3409865, 0.0, 33.903097]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+subelement: false
+virtual_name: ''

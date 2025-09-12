@@ -1,0 +1,29 @@
+alias: null
+controls:
+  EX1: ''
+  EX2: ''
+diagnostic:
+  camera_name: CLA-S07-DIA-CAM-04
+  devices:
+    devices: []
+  has_camera: true
+  type: screen
+hardware_class: Diagnostic
+hardware_model: YAG
+hardware_type: Screen
+machine_area: S07
+name: CLA-S07-DIA-SCR-04
+physical:
+  datum: [0.0, 0.0, 47.810933]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.0]
+  length: 0.0
+  middle: [0.0, 0.0, 47.810933]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+subelement: false
+virtual_name: ''

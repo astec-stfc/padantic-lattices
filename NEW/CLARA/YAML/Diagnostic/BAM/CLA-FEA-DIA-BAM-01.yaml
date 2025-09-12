@@ -1,0 +1,25 @@
+alias: null
+controls:
+  EX1: ''
+  EX2: ''
+diagnostic:
+  type: beam_arrival_monitor
+hardware_class: Diagnostic
+hardware_model: DESY
+hardware_type: BAM
+machine_area: FEA
+name: CLA-FEA-DIA-BAM-01
+physical:
+  datum: [3.680751, 0.0, 59.7115]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.0]
+  length: 0.2
+  middle: [3.680751, 0.0, 59.7115]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+subelement: false
+virtual_name: ''

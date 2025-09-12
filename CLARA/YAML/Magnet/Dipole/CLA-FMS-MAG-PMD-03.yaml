@@ -1,0 +1,69 @@
+alias: null
+controls:
+    EX1:
+        auto_buffer: false
+        buffer_size: 10
+        description: example controls information 1
+        protocol: CA
+        pv: CLA-FMS-MAG-PMD-03:TEST1
+        type: statistical
+        units: Gpc
+    EX2:
+        description: example controls information 2
+        protocol: PVA
+        pv: CLA-FMS-MAG-PMD-03:TEST2
+        type: binary
+degauss:
+    steps: 11
+    tolerance: 0.5
+    values: []
+electrical:
+    maxI: 0
+    minI: 0
+    read_tolerance: 0.1
+hardware_class: Magnet
+hardware_model: Generic
+hardware_type: Dipole
+machine_area: FMS
+magnetic:
+    field_integral_coefficients:
+        coefficients: [0]
+    length: 0.075
+    linear_saturation_coefficients:
+        I0: 0
+        I_max: 0
+        L: 0
+        a: 0
+        d: 0
+        f: 0
+        m: 0
+    multipoles:
+        K0L:
+            normal: -0.01
+            order: 0
+            radius: 0.0
+            skew: 0.0
+    order: 0
+    random_multipoles: {}
+    settle_time: 45.0
+    skew: false
+    systematic_multipoles: {}
+manufacturer:
+    hardware_class: Dipole
+    manufacturer: ''
+    serial_number: ''
+name: CLA-FMS-MAG-PMD-03
+physical:
+    datum: [0.00071846, 0.0, 55.25619125]
+    error:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+    global_rotation: [0.0, 0.0, -0.010004]
+    length: 0.075
+    middle: [-3.165e-05, 0.0, 55.21869844]
+    rotation: [0.0, 0.0, 0.0]
+    survey:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+subelement: false
+virtual_name: ''

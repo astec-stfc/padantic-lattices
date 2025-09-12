@@ -1,0 +1,64 @@
+alias: null
+controls:
+    EX1:
+        auto_buffer: false
+        buffer_size: 10
+        description: example controls information 1
+        protocol: CA
+        pv: EBT-HRG1-MAG-SOL-01:TEST1
+        type: statistical
+        units: Gpc
+    EX2:
+        description: example controls information 2
+        protocol: PVA
+        pv: EBT-HRG1-MAG-SOL-01:TEST2
+        type: binary
+degauss:
+    steps: 11
+    tolerance: 0.5
+    values: []
+electrical:
+    maxI: 0
+    minI: 0
+    read_tolerance: 0.1
+hardware_class: Magnet
+hardware_model: Generic
+hardware_type: Solenoid
+machine_area: HRG1
+magnetic:
+    field_integral_coefficients:
+        coefficients: [0]
+    fields:
+        S0L: 0.1104
+    length: 0.32
+    linear_saturation_coefficients:
+        I0: 0
+        I_max: 0
+        L: 0
+        a: 0
+        d: 0
+        f: 0
+        m: 0
+    order: 0
+    random_fields: {}
+    settle_time: 45.0
+    systematic_fields: {}
+manufacturer:
+    hardware_class: Solenoid
+    manufacturer: ''
+    serial_number: ''
+name: EBT-HRG1-MAG-SOL-01
+physical:
+    datum: [0.0, 0.0, 0.32]
+    error:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+    global_rotation: [0.0, 0.0, 0.0]
+    length: 0.32
+    middle: [0.0, 0.0, 0.16241]
+    rotation: [0.0, 0.0, 0.0]
+    survey:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+subelement: true
+virtual_name: ''

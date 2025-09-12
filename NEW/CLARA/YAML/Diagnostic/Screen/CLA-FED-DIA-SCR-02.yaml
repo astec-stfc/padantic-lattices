@@ -1,0 +1,29 @@
+alias: null
+controls:
+  EX1: ''
+  EX2: ''
+diagnostic:
+  camera_name: CLA-FED-DIA-CAM-02
+  devices:
+    devices: []
+  has_camera: true
+  type: screen
+hardware_class: Diagnostic
+hardware_model: YAG
+hardware_type: Screen
+machine_area: FED
+name: CLA-FED-DIA-SCR-02
+physical:
+  datum: [2.9391941, 0.0, 81.67007795]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.3490658504]
+  length: 0.15
+  middle: [2.9391941, 0.0, 81.67007795]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+subelement: false
+virtual_name: ''

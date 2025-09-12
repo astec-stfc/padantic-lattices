@@ -1,0 +1,59 @@
+alias: null
+controls:
+  EX1: ''
+  EX2: ''
+degauss:
+  steps: 11
+  tolerance: 0.5
+  values: [176.65, -176.65, 106.2, -106.2, 70.8, -70.8, 35.4, -35.4, 17.7, -17.7,
+    0.0]
+electrical:
+  maxI: 177
+  minI: -177.0
+  read_tolerance: 0.1
+hardware_class: Magnet
+hardware_model: Generic
+hardware_type: Quadrupole
+machine_area: FEH
+magnetic:
+  field_integral_coefficients:
+    coefficients: [0]
+  length: 0.277
+  linear_saturation_coefficients:
+    I0: 4002.9454427808723
+    I_max: 21.628457870458096
+    L: 256.23
+    a: -3.3264621947538455e-06
+    d: 53.30377728973838
+    f: 0.0
+    m: 0.026242308819220624
+  multipoles:
+    K1L:
+      normal: -1.736535
+      order: 1
+      radius: 0.0
+      skew: 0.0
+  order: 1
+  random_multipoles: {}
+  settle_time: 45.0
+  skew: false
+  systematic_multipoles: {}
+manufacturer:
+  hardware_class: Quadrupole
+  manufacturer: Quadrupole Type 4
+  serial_number: QW4-09
+name: CLA-FEH-MAG-QUAD-01
+physical:
+  datum: [3.6807505, 0.0, 67.0275]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.0]
+  length: 0.277
+  middle: [3.6807505, 0.0, 67.0275]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+subelement: false
+virtual_name: ''

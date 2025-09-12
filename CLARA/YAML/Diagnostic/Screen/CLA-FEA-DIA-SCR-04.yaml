@@ -1,0 +1,40 @@
+alias: null
+controls:
+    EX1:
+        auto_buffer: false
+        buffer_size: 10
+        description: example controls information 1
+        protocol: CA
+        pv: CLA-FEA-DIA-SCR-04:TEST1
+        type: statistical
+        units: Gpc
+    EX2:
+        description: example controls information 2
+        protocol: PVA
+        pv: CLA-FEA-DIA-SCR-04:TEST2
+        type: binary
+diagnostic:
+    camera_name: CLA-FEA-DIA-CAM-04
+    devices:
+        devices: []
+    has_camera: true
+    type: CTR
+hardware_class: Diagnostic
+hardware_model: YAG
+hardware_type: Screen
+machine_area: FEA
+name: CLA-FEA-DIA-SCR-04
+physical:
+    datum: [3.680751, 0.0, 61.208709]
+    error:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+    global_rotation: [0.0, 0.0, 0.0]
+    length: 0.2
+    middle: [3.680751, 0.0, 61.208709]
+    rotation: [0.0, 0.0, 0.0]
+    survey:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+subelement: false
+virtual_name: ''

@@ -1,0 +1,69 @@
+alias: null
+controls:
+    EX1:
+        auto_buffer: false
+        buffer_size: 10
+        description: example controls information 1
+        protocol: CA
+        pv: CLA-FEA-MAG-QUAD-09:TEST1
+        type: statistical
+        units: Gpc
+    EX2:
+        description: example controls information 2
+        protocol: PVA
+        pv: CLA-FEA-MAG-QUAD-09:TEST2
+        type: binary
+degauss:
+    steps: 11
+    tolerance: 0.5
+    values: [93.81, -93.81, 56.4, -56.4, 37.6, -37.6, 18.8, -18.8, 9.4, -9.4, 0.0]
+electrical:
+    maxI: 94
+    minI: -94.0
+    read_tolerance: 0.1
+hardware_class: Magnet
+hardware_model: Generic
+hardware_type: Quadrupole
+machine_area: FEA
+magnetic:
+    field_integral_coefficients:
+        coefficients: [0]
+    length: 0.15
+    linear_saturation_coefficients:
+        I0: 720.6327084458161
+        I_max: 34.5695482478277
+        L: 179.328443537157
+        a: -2.409750708874452e-05
+        d: 12.485314749941146
+        f: 0.0
+        m: 0.03306482373239496
+    multipoles:
+        K1L:
+            normal: 1.56483
+            order: 1
+            radius: 0.0
+            skew: 0.0
+    order: 1
+    random_multipoles: {}
+    settle_time: 45.0
+    skew: false
+    systematic_multipoles: {}
+manufacturer:
+    hardware_class: Quadrupole
+    manufacturer: Quadrupole Type 3
+    serial_number: '16625'
+name: CLA-FEA-MAG-QUAD-09
+physical:
+    datum: [2.9427678, 0.0, 56.34009205]
+    error:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+    global_rotation: [0.0, 0.0, -0.2443460953]
+    length: 0.15
+    middle: [2.9427678, 0.0, 56.34009205]
+    rotation: [0.0, 0.0, 0.0]
+    survey:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+subelement: false
+virtual_name: ''

@@ -1,0 +1,55 @@
+Horizontal_Corrector: CLA-FED-MAG-HCOR-01
+Vertical_Corrector: CLA-FED-MAG-VCOR-01
+alias: null
+controls:
+  EX1: ''
+  EX2: ''
+degauss:
+  steps: 11
+  tolerance: 0.5
+  values: []
+electrical:
+  maxI: 0
+  minI: 0
+  read_tolerance: 0.1
+hardware_class: Magnet
+hardware_model: Generic
+hardware_type: Combined_Corrector
+machine_area: FED
+magnetic:
+  field_integral_coefficients:
+    coefficients: [0]
+  length: 0.1
+  linear_saturation_coefficients:
+    I0: 0
+    I_max: 0
+    L: 0
+    a: 0
+    d: 0
+    f: 0
+    m: 0
+  multipoles: {}
+  order: 0
+  random_multipoles: {}
+  settle_time: 45.0
+  skew: false
+  systematic_multipoles: {}
+manufacturer:
+  hardware_class: Combined_Corrector
+  manufacturer: ''
+  serial_number: ''
+name: CLA-FED-MAG-HVCOR-01
+physical:
+  datum: [3.6807505, 0.0, 78.47]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.0]
+  length: 0.1
+  middle: [3.6807505, 0.0, 78.47]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+subelement: false
+virtual_name: ''

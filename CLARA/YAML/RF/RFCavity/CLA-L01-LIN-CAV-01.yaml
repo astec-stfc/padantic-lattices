@@ -1,0 +1,40 @@
+alias: null
+cavity:
+    attenuation_constant: 0.42
+    cell_length: 0.0333333333333333
+    coupling_cell_length: 0.0495
+    crest: 269.90983
+    design_gamma: 10.0
+    design_power: 25000000.0
+    frequency: 2998500000.0
+    n_cells: 61
+    phase: 16.0
+    shunt_impedance: 130693000.0
+    structure_Type: TravellingWave
+hardware_class: RF
+hardware_model: SBand
+hardware_type: RFCavity
+machine_area: L01
+name: CLA-L01-LIN-CAV-01
+physical:
+    datum: [0.0, 0.0, 3.2269]
+    error:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+    global_rotation: [0.0, 0.0, 0.0]
+    length: 2.03333
+    middle: [0.0, 0.0, 2.210235]
+    rotation: [0.0, 0.0, 0.0]
+    survey:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+simulation:
+    field_amplitude: 21000000.0
+    field_definition: $master_lattice_location$Data_Files/TWS_S-DL.hdf5
+    t_column: t
+    wakefield_definition: $master_lattice_location$Data_Files/SzSx5um10mm.hdf5
+    wx_column: Wx
+    wy_column: Wy
+    wz_column: Wz
+subelement: false
+virtual_name: ''

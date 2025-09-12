@@ -1,0 +1,69 @@
+alias: null
+controls:
+    EX1:
+        auto_buffer: false
+        buffer_size: 10
+        description: example controls information 1
+        protocol: CA
+        pv: CLA-S04-MAG-QUAD-08:TEST1
+        type: statistical
+        units: Gpc
+    EX2:
+        description: example controls information 2
+        protocol: PVA
+        pv: CLA-S04-MAG-QUAD-08:TEST2
+        type: binary
+degauss:
+    steps: 11
+    tolerance: 0.5
+    values: [93.81, -93.81, 56.4, -56.4, 37.6, -37.6, 18.8, -18.8, 9.4, -9.4, 0.0]
+electrical:
+    maxI: 94
+    minI: -94.0
+    read_tolerance: 0.1
+hardware_class: Magnet
+hardware_model: Generic
+hardware_type: Quadrupole
+machine_area: S04
+magnetic:
+    field_integral_coefficients:
+        coefficients: [0]
+    length: 0.162
+    linear_saturation_coefficients:
+        I0: 787.543390208552
+        I_max: 34.914637845922414
+        L: 177.95551811340832
+        a: -2.191868133013368e-05
+        d: 13.567785600815434
+        f: 0.0
+        m: 0.03299325956586514
+    multipoles:
+        K1L:
+            normal: -0.043544
+            order: 1
+            radius: 0.0
+            skew: 0.0
+    order: 1
+    random_multipoles: {}
+    settle_time: 45.0
+    skew: false
+    systematic_multipoles: {}
+manufacturer:
+    hardware_class: Quadrupole
+    manufacturer: Quadrupole Type 3
+    serial_number: '16609'
+name: CLA-S04-MAG-QUAD-08
+physical:
+    datum: [0.0, 0.0, 23.125268]
+    error:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+    global_rotation: [0.0, 0.0, 0.0]
+    length: 0.162
+    middle: [0.0, 0.0, 23.044268]
+    rotation: [0.0, 0.0, 0.0]
+    survey:
+        position: [0.0, 0.0, 0.0]
+        rotation: [0.0, 0.0, 0.0]
+subelement: false
+virtual_name: ''
