@@ -1,105 +1,78 @@
 alias: null
 controls:
-    EX1:
-        auto_buffer: false
-        buffer_size: 10
-        description: example controls information 1
-        name: CLA-FEA-MAG-QUAD-10:TEST1
-        protocol: CA
-        type: statistical
-        units: Gpc
-    EX2:
-        description: example controls information 2
-        name: CLA-FEA-MAG-QUAD-10:TEST2
-        protocol: PVA
-        type: binary
+  variables:
+    readback:
+      description: Readback of CLA-FEA-MAG-QUAD-10
+      dtype: float
+      identifier: CLA-FEA-MAG-QUAD-10:RBV
+      protocol: CA
+      read_only: true
+      units: N/A
+    setpoint:
+      description: Setpoint of CLA-FEA-MAG-QUAD-10
+      dtype: float
+      identifier: CLA-FEA-MAG-QUAD-10:SP
+      protocol: CA
+      read_only: true
+      units: N/A
+    state:
+      description: State of CLA-FEA-MAG-QUAD-10
+      dtype: int
+      identifier: CLA-FEA-MAG-QUAD-10:STATE
+      protocol: CA
+      read_only: false
+      units: N/A
 degauss:
-    steps: 11
-    tolerance: 0.5
-    values:
-    - 93.81
-    - -93.81
-    - 56.4
-    - -56.4
-    - 37.6
-    - -37.6
-    - 18.8
-    - -18.8
-    - 9.4
-    - -9.4
-    - 0.0
+  steps: 11
+  tolerance: 0.5
+  values: [93.81, -93.81, 56.4, -56.4, 37.6, -37.6, 18.8, -18.8, 9.4, -9.4, 0.0]
 electrical:
-    maxI: 94
-    minI: -94.0
-    read_tolerance: 0.1
+  maxI: 94
+  minI: -94.0
+  read_tolerance: 0.1
 hardware_class: Magnet
 hardware_model: Generic
 hardware_type: Quadrupole
 machine_area: FEA
 magnetic:
-    field_integral_coefficients:
-        coefficients:
-        - 0
-    length: 0.15
-    linear_saturation_coefficients:
-        I0: 718.58470535832
-        I_max: 37.21124570981863
-        L: 178.145422238629
-        a: -2.4248379497012803e-05
-        d: 12.487413547217809
-        f: 0.0
-        m: 0.03304440445749884
-    multipoles:
-        K1L:
-            normal: -1.11338
-            order: 1
-            radius: 0.0
-            skew: 0.0
-    order: 1
-    random_multipoles: {}
-    settle_time: 45.0
-    skew: false
-    systematic_multipoles: {}
+  field_integral_coefficients:
+    coefficients: [0]
+  length: 0.15
+  linear_saturation_coefficients:
+    I0: 718.58470535832
+    I_max: 37.21124570981863
+    L: 178.145422238629
+    a: -2.4248379497012803e-05
+    d: 12.487413547217809
+    f: 0.0
+    m: 0.03304440445749884
+  multipoles:
+    K1L:
+      normal: -1.11338
+      order: 1
+      radius: 0.0
+      skew: 0.0
+  order: 1
+  random_multipoles: {}
+  settle_time: 45.0
+  skew: false
+  systematic_multipoles: {}
 manufacturer:
-    hardware_class: Quadrupole
-    manufacturer: Quadrupole Type 3
-    serial_number: '16623'
+  hardware_class: Quadrupole
+  manufacturer: Quadrupole Type 3
+  serial_number: '16623'
 name: CLA-FEA-MAG-QUAD-10
 physical:
-    datum:
-    - 3.0758248
-    - 0.0
-    - 56.87375505
-    error:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
-    global_rotation:
-    - 0.0
-    - 0.0
-    - -0.2443460953
-    length: 0.15
-    middle:
-    - 3.0758248
-    - 0.0
-    - 56.87375505
-    rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    survey:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
+  datum: [3.0758248, 0.0, 56.87375505]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, -0.2443460953]
+  length: 0.15
+  middle: [3.0758248, 0.0, 56.87375505]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
 subelement: false
 virtual_name: ''

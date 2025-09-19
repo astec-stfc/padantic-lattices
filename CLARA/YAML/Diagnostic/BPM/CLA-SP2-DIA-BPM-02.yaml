@@ -1,69 +1,62 @@
 alias: null
 controls:
-    EX1:
-        auto_buffer: false
-        buffer_size: 10
-        description: example controls information 1
-        name: CLA-SP2-DIA-BPM-02:TEST1
-        protocol: CA
-        type: statistical
-        units: Gpc
-    EX2:
-        description: example controls information 2
-        name: CLA-SP2-DIA-BPM-02:TEST2
-        protocol: PVA
-        type: binary
+  variables:
+    readback:
+      description: Readback of CLA-SP2-DIA-BPM-02
+      dtype: float
+      identifier: CLA-SP2-DIA-BPM-02:RBV
+      protocol: CA
+      read_only: true
+      units: N/A
+    setpoint:
+      description: Setpoint of CLA-SP2-DIA-BPM-02
+      dtype: float
+      identifier: CLA-SP2-DIA-BPM-02:SP
+      protocol: CA
+      read_only: true
+      units: N/A
+    state:
+      description: State of CLA-SP2-DIA-BPM-02
+      dtype: int
+      identifier: CLA-SP2-DIA-BPM-02:STATE
+      protocol: CA
+      read_only: false
+      units: N/A
 diagnostic:
-    attenuation1_calibration: 12
-    attenuation2_calibration: 12
-    charge_calibration: 70
-    mn: 15
-    settle_time: 0.5
-    type: beam_position_monitor
-    voltage1_calibration: 1
-    voltage2_calibration: 1
-    xn: 0
-    yn: 0
+  attenuation1_calibration: 12
+  attenuation2_calibration: 12
+  charge_calibration: 70
+  mn: 15
+  settle_time: 0.5
+  type: beam_position_monitor
+  voltage1_calibration: 1
+  voltage2_calibration: 1
+  xn: 0
+  yn: 0
+electrical:
+  maxI: 0
+  minI: 0
+  read_tolerance: 0.1
 hardware_class: Diagnostic
 hardware_model: Stripline
 hardware_type: BPM
 machine_area: SP2
+manufacturer:
+  hardware_class: BPM
+  manufacturer: ''
+  serial_number: ''
 name: CLA-SP2-DIA-BPM-02
 physical:
-    datum:
-    - -1.262423
-    - 0.0
-    - 35.4990718
-    error:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
-    global_rotation:
-    - 0.0
-    - 0.0
-    - 0.523599
-    length: 0.21
-    middle:
-    - -1.209923
-    - 0.0
-    - 35.4081391
-    rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    survey:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
+  datum: [-1.262423, 0.0, 35.4990718]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.523599]
+  length: 0.21
+  middle: [-1.209923, 0.0, 35.4081391]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
 subelement: false
 virtual_name: ''

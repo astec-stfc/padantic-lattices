@@ -2,90 +2,74 @@ Horizontal_Corrector: CLA-S07-MAG-HCOR-05
 Vertical_Corrector: CLA-S07-MAG-VCOR-05
 alias: null
 controls:
-    EX1:
-        auto_buffer: false
-        buffer_size: 10
-        description: example controls information 1
-        name: CLA-S07-MAG-HVCOR-05:TEST1
-        protocol: CA
-        type: statistical
-        units: Gpc
-    EX2:
-        description: example controls information 2
-        name: CLA-S07-MAG-HVCOR-05:TEST2
-        protocol: PVA
-        type: binary
+  variables:
+    readback:
+      description: Readback of CLA-S07-MAG-HVCOR-05
+      dtype: float
+      identifier: CLA-S07-MAG-HVCOR-05:RBV
+      protocol: CA
+      read_only: true
+      units: N/A
+    setpoint:
+      description: Setpoint of CLA-S07-MAG-HVCOR-05
+      dtype: float
+      identifier: CLA-S07-MAG-HVCOR-05:SP
+      protocol: CA
+      read_only: true
+      units: N/A
+    state:
+      description: State of CLA-S07-MAG-HVCOR-05
+      dtype: int
+      identifier: CLA-S07-MAG-HVCOR-05:STATE
+      protocol: CA
+      read_only: false
+      units: N/A
 degauss:
-    steps: 11
-    tolerance: 0.5
-    values: []
+  steps: 11
+  tolerance: 0.5
+  values: []
 electrical:
-    maxI: 0
-    minI: 0
-    read_tolerance: 0.1
+  maxI: 0
+  minI: 0
+  read_tolerance: 0.1
 hardware_class: Magnet
 hardware_model: Generic
 hardware_type: Combined_Corrector
 machine_area: S07
 magnetic:
-    field_integral_coefficients:
-        coefficients:
-        - 0
-    length: 0.05
-    linear_saturation_coefficients:
-        I0: 0
-        I_max: 0
-        L: 0
-        a: 0
-        d: 0
-        f: 0
-        m: 0
-    multipoles: {}
-    order: 0
-    random_multipoles: {}
-    settle_time: 45.0
-    skew: false
-    systematic_multipoles: {}
+  field_integral_coefficients:
+    coefficients: [0]
+  length: 0.05
+  linear_saturation_coefficients:
+    I0: 0
+    I_max: 0
+    L: 0
+    a: 0
+    d: 0
+    f: 0
+    m: 0
+  multipoles: {}
+  order: 0
+  random_multipoles: {}
+  settle_time: 45.0
+  skew: false
+  systematic_multipoles: {}
 manufacturer:
-    hardware_class: Combined_Corrector
-    manufacturer: ''
-    serial_number: ''
+  hardware_class: Combined_Corrector
+  manufacturer: ''
+  serial_number: ''
 name: CLA-S07-MAG-HVCOR-05
 physical:
-    datum:
-    - 0.0
-    - 0.0
-    - 45.1623
-    error:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
-    global_rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    length: 0.05
-    middle:
-    - 0.0
-    - 0.0
-    - 45.1373
-    rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    survey:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
+  datum: [0.0, 0.0, 45.1623]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.0]
+  length: 0.05
+  middle: [0.0, 0.0, 45.1373]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
 subelement: false
 virtual_name: ''

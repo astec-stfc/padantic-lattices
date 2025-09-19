@@ -1,105 +1,78 @@
 alias: null
 controls:
-    EX1:
-        auto_buffer: false
-        buffer_size: 10
-        description: example controls information 1
-        name: CLA-S04-MAG-QUAD-02:TEST1
-        protocol: CA
-        type: statistical
-        units: Gpc
-    EX2:
-        description: example controls information 2
-        name: CLA-S04-MAG-QUAD-02:TEST2
-        protocol: PVA
-        type: binary
+  variables:
+    readback:
+      description: Readback of CLA-S04-MAG-QUAD-02
+      dtype: float
+      identifier: CLA-S04-MAG-QUAD-02:RBV
+      protocol: CA
+      read_only: true
+      units: N/A
+    setpoint:
+      description: Setpoint of CLA-S04-MAG-QUAD-02
+      dtype: float
+      identifier: CLA-S04-MAG-QUAD-02:SP
+      protocol: CA
+      read_only: true
+      units: N/A
+    state:
+      description: State of CLA-S04-MAG-QUAD-02
+      dtype: int
+      identifier: CLA-S04-MAG-QUAD-02:STATE
+      protocol: CA
+      read_only: false
+      units: N/A
 degauss:
-    steps: 11
-    tolerance: 0.5
-    values:
-    - 93.81
-    - -93.81
-    - 56.4
-    - -56.4
-    - 37.6
-    - -37.6
-    - 18.8
-    - -18.8
-    - 9.4
-    - -9.4
-    - 0.0
+  steps: 11
+  tolerance: 0.5
+  values: [93.81, -93.81, 56.4, -56.4, 37.6, -37.6, 18.8, -18.8, 9.4, -9.4, 0.0]
 electrical:
-    maxI: 94
-    minI: -94.0
-    read_tolerance: 0.1
+  maxI: 94
+  minI: -94.0
+  read_tolerance: 0.1
 hardware_class: Magnet
 hardware_model: Generic
 hardware_type: Quadrupole
 machine_area: S04
 magnetic:
-    field_integral_coefficients:
-        coefficients:
-        - 0
-    length: 0.162
-    linear_saturation_coefficients:
-        I0: 724.2670444198216
-        I_max: 36.25626336735337
-        L: 178.2118044564119
-        a: -2.4008566592634895e-05
-        d: 12.562440094458427
-        f: 0.0
-        m: 0.033036305306697863
-    multipoles:
-        K1L:
-            normal: 0.0269461
-            order: 1
-            radius: 0.0
-            skew: 0.0
-    order: 1
-    random_multipoles: {}
-    settle_time: 45.0
-    skew: false
-    systematic_multipoles: {}
+  field_integral_coefficients:
+    coefficients: [0]
+  length: 0.162
+  linear_saturation_coefficients:
+    I0: 724.2670444198216
+    I_max: 36.25626336735337
+    L: 178.2118044564119
+    a: -2.4008566592634895e-05
+    d: 12.562440094458427
+    f: 0.0
+    m: 0.033036305306697863
+  multipoles:
+    K1L:
+      normal: 0.0269461
+      order: 1
+      radius: 0.0
+      skew: 0.0
+  order: 1
+  random_multipoles: {}
+  settle_time: 45.0
+  skew: false
+  systematic_multipoles: {}
 manufacturer:
-    hardware_class: Quadrupole
-    manufacturer: Quadrupole Type 3
-    serial_number: '16607'
+  hardware_class: Quadrupole
+  manufacturer: Quadrupole Type 3
+  serial_number: '16607'
 name: CLA-S04-MAG-QUAD-02
 physical:
-    datum:
-    - 0.0
-    - 0.0
-    - 17.100268
-    error:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
-    global_rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    length: 0.162
-    middle:
-    - 0.0
-    - 0.0
-    - 17.019268
-    rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    survey:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
+  datum: [0.0, 0.0, 17.100268]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.0]
+  length: 0.162
+  middle: [0.0, 0.0, 17.019268]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
 subelement: false
 virtual_name: ''

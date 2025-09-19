@@ -1,60 +1,53 @@
 alias: null
 controls:
-    EX1:
-        auto_buffer: false
-        buffer_size: 10
-        description: example controls information 1
-        name: CLA-S04-DIA-ICT-01:TEST1
-        protocol: CA
-        type: statistical
-        units: Gpc
-    EX2:
-        description: example controls information 2
-        name: CLA-S04-DIA-ICT-01:TEST2
-        protocol: PVA
-        type: binary
+  variables:
+    readback:
+      description: Readback of CLA-S04-DIA-ICT-01
+      dtype: float
+      identifier: CLA-S04-DIA-ICT-01:RBV
+      protocol: CA
+      read_only: true
+      units: N/A
+    setpoint:
+      description: Setpoint of CLA-S04-DIA-ICT-01
+      dtype: float
+      identifier: CLA-S04-DIA-ICT-01:SP
+      protocol: CA
+      read_only: true
+      units: N/A
+    state:
+      description: State of CLA-S04-DIA-ICT-01
+      dtype: int
+      identifier: CLA-S04-DIA-ICT-01:STATE
+      protocol: CA
+      read_only: false
+      units: N/A
 diagnostic:
-    type: integrated_current_transformer
+  type: integrated_current_transformer
+electrical:
+  maxI: 0
+  minI: 0
+  read_tolerance: 0.1
 hardware_class: Diagnostic
 hardware_model: Generic
 hardware_type: ICT
 machine_area: S04
+manufacturer:
+  hardware_class: ICT
+  manufacturer: ''
+  serial_number: ''
 name: CLA-S04-DIA-ICT-01
 physical:
-    datum:
-    - 0.0
-    - 0.0
-    - 16.680768
-    error:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
-    global_rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    length: 0.05
-    middle:
-    - 0.0
-    - 0.0
-    - 16.655768
-    rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    survey:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
+  datum: [0.0, 0.0, 16.680768]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.0]
+  length: 0.05
+  middle: [0.0, 0.0, 16.655768]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
 subelement: false
 virtual_name: ''

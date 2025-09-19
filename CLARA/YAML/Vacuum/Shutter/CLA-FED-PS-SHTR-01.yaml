@@ -1,60 +1,53 @@
 alias: null
 controls:
-    EX1:
-        auto_buffer: false
-        buffer_size: 10
-        description: example controls information 1
-        name: CLA-FED-PS-SHTR-01:TEST1
-        protocol: CA
-        type: statistical
-        units: Gpc
-    EX2:
-        description: example controls information 2
-        name: CLA-FED-PS-SHTR-01:TEST2
-        protocol: PVA
-        type: binary
+  variables:
+    readback:
+      description: Readback of CLA-FED-PS-SHTR-01
+      dtype: float
+      identifier: CLA-FED-PS-SHTR-01:RBV
+      protocol: CA
+      read_only: true
+      units: N/A
+    setpoint:
+      description: Setpoint of CLA-FED-PS-SHTR-01
+      dtype: float
+      identifier: CLA-FED-PS-SHTR-01:SP
+      protocol: CA
+      read_only: true
+      units: N/A
+    state:
+      description: State of CLA-FED-PS-SHTR-01
+      dtype: int
+      identifier: CLA-FED-PS-SHTR-01:STATE
+      protocol: CA
+      read_only: false
+      units: N/A
+electrical:
+  maxI: 0
+  minI: 0
+  read_tolerance: 0.1
 hardware_class: Vacuum
 hardware_model: Generic
 hardware_type: Shutter
 machine_area: FED
+manufacturer:
+  hardware_class: Shutter
+  manufacturer: ''
+  serial_number: ''
 name: CLA-FED-PS-SHTR-01
 physical:
-    datum:
-    - 3.6807505
-    - 0.0
-    - 77.7199
-    error:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
-    global_rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    length: 0.32
-    middle:
-    - 3.6807505
-    - 0.0
-    - 77.7199
-    rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    survey:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
+  datum: [3.6807505, 0.0, 77.7199]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.0]
+  length: 0.32
+  middle: [3.6807505, 0.0, 77.7199]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
 shutter:
-    interlocks: []
+  interlocks: []
 subelement: false
 virtual_name: ''

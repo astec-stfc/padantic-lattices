@@ -1,64 +1,57 @@
 alias: null
 controls:
-    EX1:
-        auto_buffer: false
-        buffer_size: 10
-        description: example controls information 1
-        name: CLA-FEH-DIA-SCR-03:TEST1
-        protocol: CA
-        type: statistical
-        units: Gpc
-    EX2:
-        description: example controls information 2
-        name: CLA-FEH-DIA-SCR-03:TEST2
-        protocol: PVA
-        type: binary
+  variables:
+    readback:
+      description: Readback of CLA-FEH-DIA-SCR-03
+      dtype: float
+      identifier: CLA-FEH-DIA-SCR-03:RBV
+      protocol: CA
+      read_only: true
+      units: N/A
+    setpoint:
+      description: Setpoint of CLA-FEH-DIA-SCR-03
+      dtype: float
+      identifier: CLA-FEH-DIA-SCR-03:SP
+      protocol: CA
+      read_only: true
+      units: N/A
+    state:
+      description: State of CLA-FEH-DIA-SCR-03
+      dtype: int
+      identifier: CLA-FEH-DIA-SCR-03:STATE
+      protocol: CA
+      read_only: false
+      units: N/A
 diagnostic:
-    camera_name: CLA-FEH-DIA-CAM-03
-    devices:
-        devices: []
-    has_camera: true
-    type: screen
+  camera_name: CLA-FEH-DIA-CAM-03
+  devices:
+    devices: []
+  has_camera: true
+  type: screen
+electrical:
+  maxI: 0
+  minI: 0
+  read_tolerance: 0.1
 hardware_class: Diagnostic
 hardware_model: YAG
 hardware_type: Screen
 machine_area: FEH
+manufacturer:
+  hardware_class: Screen
+  manufacturer: ''
+  serial_number: ''
 name: CLA-FEH-DIA-SCR-03
 physical:
-    datum:
-    - 3.6807505
-    - 0.0
-    - 72.45933
-    error:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
-    global_rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    length: 0.15
-    middle:
-    - 3.6807505
-    - 0.0
-    - 72.47603
-    rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    survey:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
+  datum: [3.6807505, 0.0, 72.45933]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.0]
+  length: 0.15
+  middle: [3.6807505, 0.0, 72.47603]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
 subelement: false
 virtual_name: ''

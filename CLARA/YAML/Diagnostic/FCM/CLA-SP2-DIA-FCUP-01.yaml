@@ -1,60 +1,53 @@
 alias: null
 controls:
-    EX1:
-        auto_buffer: false
-        buffer_size: 10
-        description: example controls information 1
-        name: CLA-SP2-DIA-FCUP-01:TEST1
-        protocol: CA
-        type: statistical
-        units: Gpc
-    EX2:
-        description: example controls information 2
-        name: CLA-SP2-DIA-FCUP-01:TEST2
-        protocol: PVA
-        type: binary
+  variables:
+    readback:
+      description: Readback of CLA-SP2-DIA-FCUP-01
+      dtype: float
+      identifier: CLA-SP2-DIA-FCUP-01:RBV
+      protocol: CA
+      read_only: true
+      units: N/A
+    setpoint:
+      description: Setpoint of CLA-SP2-DIA-FCUP-01
+      dtype: float
+      identifier: CLA-SP2-DIA-FCUP-01:SP
+      protocol: CA
+      read_only: true
+      units: N/A
+    state:
+      description: State of CLA-SP2-DIA-FCUP-01
+      dtype: int
+      identifier: CLA-SP2-DIA-FCUP-01:STATE
+      protocol: CA
+      read_only: false
+      units: N/A
 diagnostic:
-    type: faraday_cup
+  type: faraday_cup
+electrical:
+  maxI: 0
+  minI: 0
+  read_tolerance: 0.1
 hardware_class: Diagnostic
 hardware_model: Generic
 hardware_type: FCM
 machine_area: SP2
+manufacturer:
+  hardware_class: FCM
+  manufacturer: ''
+  serial_number: ''
 name: CLA-SP2-DIA-FCUP-01
 physical:
-    datum:
-    - -1.5830055
-    - 0.0
-    - 36.054337
-    error:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
-    global_rotation:
-    - 0.0
-    - 0.0
-    - 0.523599
-    length: 0.0
-    middle:
-    - -1.5830055
-    - 0.0
-    - 36.054337
-    rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    survey:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
+  datum: [-1.5830055, 0.0, 36.054337]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.523599]
+  length: 0.0
+  middle: [-1.5830055, 0.0, 36.054337]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
 subelement: false
 virtual_name: ''

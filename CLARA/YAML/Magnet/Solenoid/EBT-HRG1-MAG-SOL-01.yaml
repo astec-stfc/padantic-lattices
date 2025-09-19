@@ -1,100 +1,74 @@
 alias: null
 controls:
-    EX1:
-        auto_buffer: false
-        buffer_size: 10
-        description: example controls information 1
-        name: EBT-HRG1-MAG-SOL-01:TEST1
-        protocol: CA
-        type: statistical
-        units: Gpc
-    EX2:
-        description: example controls information 2
-        name: EBT-HRG1-MAG-SOL-01:TEST2
-        protocol: PVA
-        type: binary
+  variables:
+    readback:
+      description: Readback of EBT-HRG1-MAG-SOL-01
+      dtype: float
+      identifier: EBT-HRG1-MAG-SOL-01:RBV
+      protocol: CA
+      read_only: true
+      units: N/A
+    setpoint:
+      description: Setpoint of EBT-HRG1-MAG-SOL-01
+      dtype: float
+      identifier: EBT-HRG1-MAG-SOL-01:SP
+      protocol: CA
+      read_only: true
+      units: N/A
+    state:
+      description: State of EBT-HRG1-MAG-SOL-01
+      dtype: int
+      identifier: EBT-HRG1-MAG-SOL-01:STATE
+      protocol: CA
+      read_only: false
+      units: N/A
 degauss:
-    steps: 11
-    tolerance: 0.5
-    values:
-    - 347.3
-    - -347.3
-    - 208.8
-    - -208.8
-    - 139.2
-    - -139.2
-    - 69.6
-    - -69.6
-    - 34.8
-    - -34.8
-    - 0.0
+  steps: 11
+  tolerance: 0.5
+  values: [347.3, -347.3, 208.8, -208.8, 139.2, -139.2, 69.6, -69.6, 34.8, -34.8,
+    0.0]
 electrical:
-    maxI: 348
-    minI: -348.0
-    read_tolerance: 0.1
+  maxI: 348
+  minI: -348.0
+  read_tolerance: 0.1
 hardware_class: Magnet
 hardware_model: Generic
 hardware_type: Solenoid
 machine_area: HRG1
 magnetic:
-    field_integral_coefficients:
-        coefficients:
-        - 0
-    fields:
-        S0L: 0.1104
-    length: 0.32
-    linear_saturation_coefficients:
-        I0: 1015.7752307342597
-        I_max: 208.39440575992705
-        L: 44.38966248440105
-        a: -1.1292871923076935e-05
-        d: 11.161548143374288
-        f: 0.0
-        m: 0.018235296499166668
-    order: 0
-    random_fields: {}
-    settle_time: 45.0
-    systematic_fields: {}
+  field_integral_coefficients:
+    coefficients: [0]
+  fields:
+    S0L: 0.1104
+  length: 0.32
+  linear_saturation_coefficients:
+    I0: 1015.7752307342597
+    I_max: 208.39440575992705
+    L: 44.38966248440105
+    a: -1.1292871923076935e-05
+    d: 11.161548143374288
+    f: 0.0
+    m: 0.018235296499166668
+  order: 0
+  random_fields: {}
+  settle_time: 45.0
+  systematic_fields: {}
 manufacturer:
-    hardware_class: Solenoid
-    manufacturer: Bucking Solenoid
-    serial_number: '1'
+  hardware_class: Solenoid
+  manufacturer: Bucking Solenoid
+  serial_number: '1'
 name: EBT-HRG1-MAG-SOL-01
 physical:
-    datum:
-    - 0.0
-    - 0.0
-    - 0.32
-    error:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
-    global_rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    length: 0.32
-    middle:
-    - 0.0
-    - 0.0
-    - 0.16241
-    rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    survey:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
+  datum: [0.0, 0.0, 0.32]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.0]
+  length: 0.32
+  middle: [0.0, 0.0, 0.16241]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
 subelement: true
 virtual_name: ''

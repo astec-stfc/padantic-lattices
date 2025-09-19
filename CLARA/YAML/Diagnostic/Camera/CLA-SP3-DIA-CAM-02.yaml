@@ -1,113 +1,88 @@
 alias: null
 controls:
-    EX1:
-        auto_buffer: false
-        buffer_size: 10
-        description: example controls information 1
-        name: CLA-SP3-DIA-CAM-02:TEST1
-        protocol: CA
-        type: statistical
-        units: Gpc
-    EX2:
-        description: example controls information 2
-        name: CLA-SP3-DIA-CAM-02:TEST2
-        protocol: PVA
-        type: binary
+  variables:
+    readback:
+      description: Readback of CLA-SP3-DIA-CAM-02
+      dtype: float
+      identifier: CLA-SP3-DIA-CAM-02:RBV
+      protocol: CA
+      read_only: true
+      units: N/A
+    setpoint:
+      description: Setpoint of CLA-SP3-DIA-CAM-02
+      dtype: float
+      identifier: CLA-SP3-DIA-CAM-02:SP
+      protocol: CA
+      read_only: true
+      units: N/A
+    state:
+      description: State of CLA-SP3-DIA-CAM-02
+      dtype: int
+      identifier: CLA-SP3-DIA-CAM-02:STATE
+      protocol: CA
+      read_only: false
+      units: N/A
 diagnostic:
-    epics_x_pixels: 1080
-    epics_y_pixels: 1280
-    flipped_horizontally: true
-    flipped_vertically: false
-    mask:
-        maximum:
-        - 300
-        - 300
-        middle:
-        - 1280
-        - 1080
-        radius:
-        - 1240
-        - 1040
-        use_maximum_values: true
-    pixel_results_indices:
-        covariance: 4
-        x: 0
-        x_sigma: 2
-        y: 1
-        y_sigma: 3
-    pixel_results_names:
-        covariance: COV
-        x: X
-        x_sigma: X_SIGMA
-        y: Y
-        y_sigma: Y_SIGMA
-    rotation: 0
-    sensor:
-        beam_pixel_average: 97.2
-        bit_depth: 12
-        maximum:
-        - 2400
-        - 2000
-        mechanical_middle:
-        - 1000
-        - 1000
-        middle:
-        - 0
-        - 0
-        minimum:
-        - 150
-        - 150
-        operating_middle:
-        - 1000
-        - 1000
-        pixels_to_mm:
-        - 0.013
-        - 0.013
-        x_pixels: 2560
-        x_scale_factor: 2
-        y_pixels: 2160
-        y_scale_factor: 2
-    type: PCO
+  epics_x_pixels: 1080
+  epics_y_pixels: 1280
+  flipped_horizontally: true
+  flipped_vertically: false
+  mask:
+    maximum: [300, 300]
+    middle: [1280, 1080]
+    radius: [1240, 1040]
+    use_maximum_values: true
+  pixel_results_indices:
+    covariance: 4
+    x: 0
+    x_sigma: 2
+    y: 1
+    y_sigma: 3
+  pixel_results_names:
+    covariance: COV
+    x: X
+    x_sigma: X_SIGMA
+    y: Y
+    y_sigma: Y_SIGMA
+  rotation: 0
+  sensor:
+    beam_pixel_average: 97.2
+    bit_depth: 12
+    maximum: [2400, 2000]
+    mechanical_middle: [1000, 1000]
+    middle: [0, 0]
+    minimum: [150, 150]
+    operating_middle: [1000, 1000]
+    pixels_to_mm: [0.013, 0.013]
+    x_pixels: 2560
+    x_scale_factor: 2
+    y_pixels: 2160
+    y_scale_factor: 2
+  type: PCO
+electrical:
+  maxI: 0
+  minI: 0
+  read_tolerance: 0.1
 hardware_class: Diagnostic
 hardware_model: PCO
 hardware_type: Camera
 machine_area: SP3
+manufacturer:
+  hardware_class: ''
+  manufacturer: ''
+  serial_number: ''
 name: CLA-SP3-DIA-CAM-02
 physical:
-    datum:
-    - -1.1433905
-    - 0.0
-    - 47.4729314
-    error:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
-    global_rotation:
-    - 0.0
-    - 0.0
-    - 0.523599
-    length: 0.0
-    middle:
-    - -1.1433905
-    - 0.0
-    - 47.4729314
-    rotation:
-    - 0.0
-    - 0.0
-    - 0.0
-    survey:
-        position:
-        - 0.0
-        - 0.0
-        - 0.0
-        rotation:
-        - 0.0
-        - 0.0
-        - 0.0
+  datum: [-1.1433905, 0.0, 47.4729314]
+  error:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
+  global_rotation: [0.0, 0.0, 0.523599]
+  length: 0.0
+  middle: [-1.1433905, 0.0, 47.4729314]
+  rotation: [0.0, 0.0, 0.0]
+  survey:
+    position: [0.0, 0.0, 0.0]
+    rotation: [0.0, 0.0, 0.0]
 subelement: false
 virtual_name: ''
